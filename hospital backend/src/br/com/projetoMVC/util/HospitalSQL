@@ -1,0 +1,16 @@
+CREATE TABLE Medico (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    especialidade VARCHAR(100),
+    crm VARCHAR(20),
+    isPlantao BOOLEAN
+	);
+	
+	CREATE TABLE Paciente (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    cpf VARCHAR(14),
+    isInternado BOOLEAN,
+    idade INTEGER,
+    medico_id INTEGER REFERENCES Medico(id)
+);
