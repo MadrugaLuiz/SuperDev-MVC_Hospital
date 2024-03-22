@@ -14,3 +14,19 @@ CREATE TABLE Medico (
     idade INTEGER,
     medico_id INTEGER REFERENCES Medico(id)
 );
+
+nome do medico,cpf, idade,  not null
+
+
+SELECT * FROM medico
+
+SELECT * FROM paciente
+
+
+ALTER TABLE Medico
+ALTER COLUMN nome SET NOT NULL
+
+ALTER TABLE Paciente
+ALTER COLUMN nome SET NOT NULL,
+ALTER COLUMN cpf SET NOT NULL,
+ALTER COLUMN idade SET NOT NULL;

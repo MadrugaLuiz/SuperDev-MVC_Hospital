@@ -1,10 +1,17 @@
 package br.com.projetoHospitaDAO;
 
-public class GenericDAO {
+import java.util.List;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public interface GenericDAO {
 
-	}
+	public List<Object> listarTodos();
+
+	public Object listarPorId(int id);
+
+	public boolean cadastrar(Object object);
+
+	public boolean alterar(Object object);
+
+	public void excluir(int id);
 
 }
