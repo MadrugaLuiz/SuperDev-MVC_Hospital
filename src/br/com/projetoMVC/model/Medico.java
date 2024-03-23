@@ -6,17 +6,19 @@ public class Medico {
 	private String nome;
 	private String especialidade;
 	private String crm;
+	private boolean isPlantao;
 
 	public Medico() {
 
 	}
 
-	public Medico(int id, String nome, String especialidade, String crm) {
+	public Medico(int id, String nome, String especialidade, String crm, boolean isPlantao) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.especialidade = especialidade;
 		this.crm = crm;
+		this.isPlantao = isPlantao;
 	}
 
 	public int getId() {
@@ -49,6 +51,14 @@ public class Medico {
 
 	public void setCrm(String crm) {
 		this.crm = crm;
+	}
+
+	public boolean getIsPlantao() {
+		return true;
+	}
+
+	public void setIsPlantao(boolean isPlantao) {
+		this.isPlantao = isPlantao;
 	}
 
 }

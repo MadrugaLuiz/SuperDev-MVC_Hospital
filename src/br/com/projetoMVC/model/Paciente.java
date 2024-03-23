@@ -6,17 +6,19 @@ public class Paciente {
 	private String nome;
 	private String cpf;
 	private int idade;
+	private boolean isInternado;
 
 	public Paciente() {
 
 	}
 
-	public Paciente(int id, String nome, String cpf, int idade) {
+	public Paciente(int id, String nome, String cpf, int idade, boolean isInternado) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.cpf = cpf;
 		this.idade = idade;
+		this.isInternado = isInternado;
 	}
 
 	public int getId() {
@@ -49,6 +51,14 @@ public class Paciente {
 
 	public void setIdade(int idade) {
 		this.idade = idade;
+	}
+
+	public boolean getIsInternado() {
+		return true;
+	}
+
+	public void setIsInternado(boolean isInternado) {
+		this.isInternado = isInternado;
 	}
 
 }
